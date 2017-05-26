@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ccut.imagecognition.MainActivity">
+
+    <include layout="@layout/custom_toolbar"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_main_content"/>
+        </LinearLayout>
+        <!--侧滑菜单-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_main_left"/>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

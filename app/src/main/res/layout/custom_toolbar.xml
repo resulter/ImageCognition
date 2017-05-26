@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:id="@+id/tl_custom"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:background="@color/toolbarBg"
+                                   android:minHeight="?attr/actionBarSize"
+                                   android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                                   app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+    <LinearLayout
+        android:id="@+id/ll_my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbarBg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_toolbar_spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_help_category_tv_bg"
+            android:drawableRight="@mipmap/icon_down"
+            android:padding="10dp"
+            android:text="级别"
+            android:textColor="@color/content_color"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_toolbar_tittle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="定位中..."
+                android:textColor="@color/textColorLight"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>
